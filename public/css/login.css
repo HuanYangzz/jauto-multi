@@ -1,0 +1,695 @@
+.large.table > tbody > tr > td{
+	height: 75px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table > tbody > tr > th{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table > tbody > tr > td > input{
+	height:45px;
+	border:none;
+	text-align: center;
+	vertical-align: middle;
+	width:65px;
+	font-size: large;
+	background-color: transparent;
+}
+
+.pass{
+
+}
+
+.COMPLETE{
+	background-color: #26B99A !important;
+	color:white;
+}
+
+.WIP{
+	
+}
+
+.NEW{
+	
+}
+
+.LOCKED{
+	background-color: #26B99A !important;
+	color:white;
+}
+
+.FINAL_LOCKED{
+	background-color: #26B99A !important;
+	color:white;
+}
+
+.grey{
+	background-color:grey !important;
+	color:white;
+}
+
+.btn-locked {
+  pointer-events: none;
+  color: white;
+  background-color: grey;
+  border-color: #ccc;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
+}
+
+.btn-fake-locked {
+  color: white !important;
+  background-color: grey !important;
+  border-color: #ccc !important;
+  cursor: not-allowed !important;
+  filter: alpha(opacity=65) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  opacity: .65 !important;
+}
+
+
+.btn-LOCKED{
+  color: white !important;
+  background-color: #26B99A !important;
+  border-color: #ccc !important;
+  cursor: not-allowed !important;
+  filter: alpha(opacity=65) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  opacity: .85 !important;
+}
+
+.clickable{
+	cursor: pointer !important;
+}
+
+.fail .grade{
+	color:red;
+}
+
+.fail-red{
+	color:red !important;
+}
+
+.th-span{
+	font-weight: bold;
+	font-size: large;
+}
+
+.btn-th{
+	/*margin-left:5px;*/
+	height: 60px;
+	width: 60px;
+	margin-top:5px;
+	margin-bottom:5px;
+	background-color:grey !important;
+	color:white;
+	border-color: white;
+	max-width: 80%;
+	padding: inherit;
+}
+
+#myTab{
+	width: 1400px;
+	white-space:nowrap;
+}
+
+#myTab li{
+	display: inline;
+}
+
+#myTabScroll{
+	overflow-x: scroll;
+}
+
+.table > tbody > tr > td{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.grade{
+	font-size: large;
+	width:20px;
+	display: block;
+	font-weight: bold;
+	margin: auto;
+}
+
+.bmi{
+	font-size: xx-small;
+	width:65px;
+	display: block;
+	font-weight: bold;
+	margin: auto;
+	color:grey;
+	height: 20px;
+}
+
+.name{
+	text-align: left;
+	white-space: normal;
+  	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    font-size: 16px;
+}
+
+.misc{
+	margin-left: 1em;
+}
+
+.small-name{
+	text-align: left;
+	white-space: normal;
+  	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; 
+    min-width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.table > tbody > tr > td > input{
+		height:40px;
+		border:none;
+		text-align: center;
+		vertical-align: middle;
+		width:50px;
+		font-size: large;
+	}
+
+	.name{
+		font-size: 16px;
+	}
+
+	.btn-th{
+		height: 40px;
+		width: 40px;
+	}
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.loading-modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .loading-modal {
+    overflow: hidden;   
+}
+
+body.loading-no-icon .loading-modal {
+	overflow: hidden;
+	display: block;
+	background:rgba( 0, 0, 0, .8 ) 50% 50% ;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loading-modal {
+    display: block;
+}
+
+.highlight-cell{
+	background-color: lightblue !important;
+}
+
+.highlight-cell.LOCKED{
+	color:white;
+	background-color: #169F85 !important;
+}
+
+.highlight-cell.COMPLETE{
+	background-color: #169F85 !important;
+	color:white;
+}
+
+.position-table{
+	table-layout:auto;
+}
+
+.teacher-cell{
+	width: 120px;
+	line-height: 20px;
+	text-align: center;
+	white-space: normal;
+  	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+.class-teacher-cell{
+	min-width: 120px;
+	min-height: 40px;
+	text-align: center;
+	white-space: normal;
+	line-height: 20px;
+  	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+.large-label{
+	font-size:120%;
+}
+
+.row-container:first-child{
+	border:3px solid #e8e8e8;
+}
+
+.row-container{
+	border:3px solid #e8e8e8;
+	border-top:none;
+}
+
+.row-container>div{
+	padding-top:10px;
+}
+
+
+.right-container{
+	border-left:3px solid #e8e8e8;
+	min-height: 80px;
+}
+
+.right-container-t{
+	border-left:3px solid #e8e8e8;
+}
+
+.chosen-drop{
+	width:150px !important;
+}
+
+.x_title h2{
+	width:100% !important;
+}
+
+.x_title span{
+	color:inherit;
+}
+
+.fixed-content{
+	height: 65vh;
+	margin-bottom: 5vh;
+	overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+	.scroll-scroll{
+		width: auto;
+	}
+
+	.scroll-scroll td{
+		width: 120px;
+	}
+}
+
+.table-right{
+
+}
+
+.table-header{
+	text-align: left;
+	height: 25px;
+	vertical-align: middle !important;
+}
+
+.table-header-standard{
+	width: 160px;
+}
+
+.table-header-class{
+	text-align: center;
+	width: 120px;
+}
+
+.table-subject{
+	width: 200px;
+}
+
+.table-subject>p{
+	text-align: left;
+	white-space: normal;
+  	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+    margin-bottom: 0px;
+}
+
+.btn-class-code{
+	width:45px;
+	height: 45px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.btn-exam{
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: grid;
+	align-items: center;
+}
+
+.btn-semester{
+	width: 120px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: grid;
+	align-items: center;
+}
+
+.btn-teacher{
+	width: 160px;
+	height: 80px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-flex;
+	align-items: center;
+	text-align: center;
+}
+.btn-teacher>span{
+	width: 100%;
+	white-space: normal;
+  	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+.class-cell{
+	cursor: pointer;
+	font-size:large;
+	height: 35px;
+}
+
+.class-position, .class-grade{
+	cursor: default;
+}
+
+.table-subject p{
+	min-width: 120px;
+}
+
+.no-pointer{
+	cursor: initial;
+}
+
+.class-cell .COMPLETE{
+	background-color: #26B99A;
+}
+
+.cell-name{
+	border-right: none;
+}
+
+.input-tb{
+	font-size: medium !important;
+}
+
+/*.login{
+	background: url(/img/background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}*/
+
+.login_content h1:after,
+.login_content h1:before
+{
+	width: 0px;
+}
+
+.bmi-cell{
+	vertical-align: text-top !important;
+	max-width: 150px;
+}
+
+.small-input{
+	width: 50px !important;
+}
+
+.mid-input{
+	width: 100px !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.small-input{
+		width: 35px !important;
+	}
+
+	.mid-input{
+		width: 70px !important;
+	}
+}
+
+.very-small-input{
+	width: 10px !important;
+}
+
+.long-text-area{
+	height:120px !important;
+	margin-bottom: 5px;
+}
+
+.fixed-text-height{
+	height: 45px !important;
+}
+
+.comment_select_box{
+	width: 50px;
+}
+
+.w-20{
+	width: 20%;
+	display: grid;
+}
+
+.flex-div{
+	display: flex;
+}
+
+.align-center{
+	align-items: center;
+	text-align: center;
+}
+
+.btn-borderless{
+	border:none !important;
+	background-color: transparent !important;
+}
+
+.ui-pnotify{
+	right:calc(50% - 150px);
+}
+
+#calculate-pop tbody tr td{
+	text-align: left !important;
+	padding-left: 10px !important;
+}
+
+#calculate-pop tbody tr td[colspan="5"]{
+	text-align: center !important;
+	padding-left: 0px !important;
+}
+
+.fixed-table-mid{
+	display: table-cell;
+}
+
+.btn-success.disabled.focus, .btn-success.disabled:focus, 
+.btn-success.disabled:hover, .btn-success[disabled].focus, .btn-success[disabled]:focus, 
+.btn-success[disabled]:hover, fieldset[disabled] .btn-success.focus, fieldset[disabled] 
+.btn-success:focus, fieldset[disabled] .btn-success:hover
+{
+	background:#169F85;
+}
+
+.th-bg-LOCKED
+{
+	background-color: #26B99A;
+}
+
+.th-bg-LOCKED button
+{
+	border-color: white!important;
+}
+
+.margin-left-10
+{
+	margin-left: 10px;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  /*color: #fff;
+  font-family: monospace;*/
+  text-align: center;
+  line-height: 25px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: grey }
+}
+
+#btn-review-current
+{
+	border-color:red;
+}
+
+
+.coco-label
+{
+	display: inline-block;
+}
+.pdf-container
+{
+	width:100%;
+	height:60vh;
+	overflow:hidden;
+}
+
+.search-field
+{
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.select-field
+{
+	margin-bottom:5px;
+}
+
+.easy-autocomplete{
+	width:100% !important
+  }
+  
+.easy-autocomplete input{
+width: 100%;
+}
+
+.student-table th span
+{
+	padding-left: 10px;
+}
+
+.student-out
+{
+	background-color: lightgrey !important;
+}
+
+.selected-button:hover
+{
+	background-color: #169F85;
+	color:white;
+}
+
+.selected-button
+{
+	background-color: #26B99A;
+	color:white;
+}
+
+.login_content .form-group
+{
+	text-align: left;
+}
+
+.login_content .form-group-reset
+{
+	text-align: center;
+}
+
+#content form .submit, .login_content form input[type=submit]
+{
+	margin-left: 10px;
+}
+
+.big-big{
+	font-size:18px;
+	font-weight: 700;
+}
+
+.text-race{
+	text-align: left !important;
+}
+
+.text-race span{
+	margin-left: 10px !important;
+}
+
+.fake-readonly
+{
+	background-color: #fff !important;
+}
+
+.rem-text{
+	float:right;
+	margin-bottom: 20px;
+}
+
+.hide-hide{
+	display:none;
+}
+
+.show-show
+{
+	display: block;
+} 
